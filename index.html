@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>リンクメニュー</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background-color: #f4f6f9;
+      font-family: sans-serif;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+    }
+    .grid {
+      max-width: 600px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2列で並べる */
+      gap: 16px;
+    }
+    .card {
+      display: block;
+      padding: 24px 16px;
+      background: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      transition: 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+      color: #0066cc;
+    }
+    .card-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+    .card-desc {
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>リンクメニュー</h1>
+
+  <div class="grid">
+    <a class="card" href="https://example.com/1">
+      <div class="card-title">サイト A</div>
+      <div class="card-desc">サイトAの説明文</div>
+    </a>
+
+    <a class="card" href="https://example.com/2">
+      <div class="card-title">サイト B</div>
+      <div class="card-desc">サイトBの説明文</div>
+    </a>
+
+    <a class="card" href="https://example.com/3">
+      <div class="card-title">サイト C</div>
+      <div class="card-desc">サイトCの説明文</div>
+    </a>
+
+    <a class="card" href="https://example.com/4" target="_blank">
+      <div class="card-title">サイト D</div>
+      <div class="card-desc">新しいタブで開きます</div>
+    </a>
+  </div>
+
+</body>
+</html>
